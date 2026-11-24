@@ -27,6 +27,7 @@
       <p class="sub">Winnipeg, Canada</p>
     </div>
     <div class="links">
+      <a href="index.html#contact">Contact me</a>
       <a href="https://www.linkedin.com/in/farhood-rismanchian-9325a832/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=YFpS0EEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
     </div>
@@ -75,6 +76,42 @@
       <p class="pub">Emergency care capacity planning: strategic trade-offs between length of stay and cost. <span class="muted"><em>IEEE Transactions on Engineering Management</em>, forthcoming.</span></p>
       <p><a href="publications.html">All publications &rarr;</a></p>
     </section>
+    <section id="contact" class="contact">
+      <h2>Contact me</h2>
+      <p class="muted">Send me a message and I'll reply by email.</p>
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a7cc8998-5037-4771-9659-6bd43a987c09">
+        <input type="hidden" name="subject" value="New message from farhoodrisman.github.io">
+        <input type="hidden" name="from_name" value="Personal website">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field-row">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button type="submit">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <script>
+    {
+      const f = document.getElementById('contact-form');
+      const out = document.getElementById('form-status');
+      f.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = f.querySelector('button');
+        btn.disabled = true; out.className = 'form-status'; out.textContent = 'Sending\u2026';
+        try {
+          const r = await fetch(f.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(f) });
+          const j = await r.json();
+          if (r.ok && j.success) { out.textContent = 'Thank you \u2014 your message has been sent.'; out.classList.add('ok'); f.reset(); }
+          else { throw new Error(j.message || 'Send failed'); }
+        } catch (err) {
+          out.textContent = 'Sorry, the message could not be sent. Please try again later or reach me on LinkedIn.'; out.classList.add('err');
+        } finally { btn.disabled = false; }
+      });
+    }
+    </script>
   </main>
 
 </div>
