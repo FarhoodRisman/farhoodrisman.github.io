@@ -1,4 +1,4 @@
-# Farhood Rismanchian — Academic Portfolio Site
+# Farhood Rismanchian — Personal Site
 
 A static academic website inspired by the [al-folio](https://github.com/ZhipengHe/al-folio) theme's clean,
 whitespace design — built as plain HTML/CSS with **no build step, no Jekyll/Ruby required**. Just push the
@@ -6,11 +6,12 @@ files and GitHub Pages will serve them as-is.
 
 ## Pages
 
-- `index.html` — About / bio, selected publications, skills
-- `cv.html` — Full CV (education, experience, grants, awards, presentations)
-- `publications.html` — Full publication list (journal articles, conference papers, preprints, technical reports)
-- `projects.html` — Project portfolio
-- `assets/css/style.css` — Shared stylesheet
+- `index.html` — About: bio, current work, selected projects and publications
+- `projects.html` — Applied and research projects
+- `publications.html` — Full publication list
+- `teaching.html` — Teaching at the University of Winnipeg and earlier
+- `cv.html` — Full CV
+- `assets/css/style.css` — Shared stylesheet (sidebar layout, Inter, maroon accent)
 
 ## Editing content
 

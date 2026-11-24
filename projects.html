@@ -4,100 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Farhood Rismanchian, Ph.D.</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%237a1f2b'/%3E%3Ctext x='50' y='64' font-family='Georgia,serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'%3EFR%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css">
+<meta name="description" content="Applied projects in logistics optimization, public-service decision support, simulation-based redesign and research.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Farhood Rismanchian, Ph.D.">
+<meta property="og:description" content="Applied projects in logistics optimization, public-service decision support, simulation-based redesign and research.">
+<meta property="og:url" content="https://farhoodrisman.github.io/projects.html">
+<meta property="og:image" content="https://farhoodrisman.github.io/assets/img/Farhood-photo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237a1f2b'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'%3EFR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="layout">
 
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="site-title">Farhood Rismanchian</a>
-    <nav class="site-nav">
-      <a href="index.html">About</a>
-      <a href="cv.html">CV</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html" class="active">Projects</a>
+  <aside class="sidebar">
+    <a href="index.html"><img class="avatar" src="assets/img/Farhood-photo.jpg" alt="Portrait of Farhood Rismanchian" width="220" height="220"></a>
+    <div class="id">
+      <p class="name">Farhood Rismanchian</p>
+      <p class="sub">Ph.D., Industrial Systems Engineering</p>
+      <p class="sub">Winnipeg, Canada</p>
+    </div>
+    <div class="links">
+      <a href="mailto:rismanchian.farhood@gmail.com">rismanchian.farhood@gmail.com</a>
+      <a href="https://www.linkedin.com/in/farhood-rismanchian-9325a832/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=YFpS0EEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+    <nav class="nav" aria-label="Site">
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<main class="container" style="padding-top: 36px;">
+  <main class="content">
+    <h1>Projects</h1>
+    <p class="lead">Selected applied and research projects.</p>
+    <article class="project" id="fleet">
+      <span class="tag">Logistics</span>
+      <h2>Fleet and distribution optimization</h2>
+      <p class="meta">Parsia Gas, Tehran &middot; consulting &middot; 2017&ndash;2022</p>
+      <p>Designed optimization engines for a fleet-management platform serving an industrial gas network: driver assignment, multi-constraint routing, product&ndash;vehicle matching and scheduling. Formulated mixed-integer and stochastic models for distribution, inventory and routing, with heuristics for instances too large to solve exactly.</p>
+      <p class="muted"><strong>Outcome:</strong> Engines deployed in the platform and validated with A/B tests and benchmarking; management dashboards for routing and inventory.</p>
+      <p class="muted"><strong>Tools:</strong> Gurobi, CPLEX, Python, Excel</p>
+    </article>
+    <article class="project" id="platform">
+      <span class="tag">Public services</span>
+      <h2>Forecasting and scheduling platform for a provincial health system</h2>
+      <p class="meta">University of Winnipeg (postdoctoral appointment), with Shared Health Manitoba &middot; 2023&ndash;2025</p>
+      <p>Helped build one reusable decision-support framework that combines demand forecasting, outcome prediction, what-if simulation and scheduling optimization. Harmonized data definitions across source systems for 1M+ records and built audit-traceable KPI logic feeding Power BI.</p>
+      <p class="muted"><strong>Outcome:</strong> ~90% forecast accuracy; validated simulation models projecting up to 40% shorter waits. A shadow implementation is being planned.</p>
+      <p class="muted"><strong>Tools:</strong> Python, SQL, Power BI, SimPy, Gurobi</p>
+    </article>
+    <article class="project" id="redesign">
+      <span class="tag">Consulting</span>
+      <h2>Simulation-based process redesign</h2>
+      <p class="meta">Insight Strategies, LLC &middot; U.S. clients, remote &middot; 2023&ndash;2024</p>
+      <p>Built and validated discrete-event simulation models of current operations from system data, staff surveys and interviews, then used simulation-based optimization to test redesigned workflows and staffing with frontline teams.</p>
+      <p class="muted"><strong>Outcome:</strong> Redesign scenarios projecting ~30% shorter length of stay; Excel and Power BI dashboards to track results after go-live.</p>
+      <p class="muted"><strong>Tools:</strong> Arena, SimPy, Python, Power BI</p>
+    </article>
+    <article class="project" id="harmonization">
+      <span class="tag">Public services</span>
+      <h2>Multi-site data standard and electronic triage</h2>
+      <p class="meta">Isfahan University of Medical Sciences &amp; Farabi Hospital &middot; 2017&ndash;2021</p>
+      <p>Co-led a shared data standard and KPI set across several sites, and the design and rollout of an electronic triage system, owning its analytics: data collection tools, a risk-scoring method, forecasting models and dashboards.</p>
+      <p class="muted"><strong>Outcome:</strong> Consistent cross-site performance measurement; dashboards adopted by clinical and administrative users.</p>
+      <p class="muted"><strong>Tools:</strong> Python, SQL, Excel</p>
+    </article>
+    <article class="project" id="warehousing">
+      <span class="tag">Research</span>
+      <h2>Performance of warehousing innovations</h2>
+      <p class="meta">With N. Zaerpour, N. Soltani and F. Zaerpour &middot; 2026</p>
+      <p>Studied the productivity and efficiency dynamics of warehousing innovations.</p>
+      <p class="muted"><strong>Outcome:</strong> Published in the <em>International Journal of Production Research</em> (2026).</p>
+    </article>
+    <article class="project" id="process-mining">
+      <span class="tag">Research</span>
+      <h2>Process-mining-based facility layout</h2>
+      <p class="meta">Yonsei University, System Optimization Laboratory &middot; 2014&ndash;2017</p>
+      <p>Built an event log from raw operational records, used process mining to find bottlenecks, and developed simulation and mixed-integer models for facility layout design.</p>
+      <p class="muted"><strong>Outcome:</strong> Published in <em>HERD</em> (2017) and <em>Value in Health</em> (2023).</p>
+      <p class="muted"><strong>Tools:</strong> Python, SQL, process mining, Arena, Gurobi</p>
+    </article>
+  </main>
 
-  <h1 style="font-family: var(--serif); margin-bottom: 4px;">Projects</h1>
-  <p style="color: var(--muted); margin-bottom: 30px;">Selected applied research and consulting projects, 2012–present.</p>
-
-  <div class="project-grid">
-
-    <div class="project-card">
-      <h3>AI Decision-Support Platform for Emergency Departments</h3>
-      <span class="project-tag">Machine Learning</span>
-      <span class="project-tag">Simulation</span>
-      <span class="project-tag">Power BI</span>
-      <p>Postdoctoral project at the University of Winnipeg, with Shared Health Manitoba, building a reusable
-      AI-enabled decision-support platform for ED operations: demand forecasting, patient-outcome prediction,
-      an AI "what-if" scenario simulator, and scheduling/workforce optimization.</p>
-      <div class="impact">Up to 40% reduction in wait times &middot; ~90% forecast accuracy &middot; ~2–3 hours saved per physician/week</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Emergency Department Simulation-Based Redesign</h3>
-      <span class="project-tag">Discrete-Event Simulation</span>
-      <span class="project-tag">Optimization</span>
-      <p>Consulting engagement with Insight Strategies, LLC for U.S. hospital clients. Built and validated an
-      as-is discrete-event simulation of ED flow from EDIS data and provider interviews, then used
-      simulation-based optimization to design and test redesign scenarios with providers.</p>
-      <div class="impact">~30% improvement in length of stay &middot; ~35% reduction in left-without-being-seen</div>
-    </div>
-
-    <div class="project-card">
-      <h3>COVID-19 E-Triage &amp; Multi-ED Data Harmonization</h3>
-      <span class="project-tag">Data Standards</span>
-      <span class="project-tag">Risk Scoring</span>
-      <p>Co-led a multi-hospital initiative with Isfahan University of Medical Sciences and Farabi Hospital to
-      harmonize COVID-19 ED data collection across sites and design/roll out an electronic triage system,
-      including the risk-scoring methodology behind it.</p>
-      <div class="impact">Harmonized data standard adopted across multiple EDs &middot; quantified impact of E-triage on patient surge</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Industrial Gas Network Optimization</h3>
-      <span class="project-tag">Mixed-Integer Programming</span>
-      <span class="project-tag">Gurobi</span>
-      <p>Project-based consulting for Parsia Gas (Tehran). Formulated MILP models for distribution, inventory,
-      and vehicle routing across an industrial gas network, with custom heuristics for routing instances too
-      large for exact solution methods.</p>
-      <div class="impact">Management-facing decision dashboards for distribution &amp; inventory planning</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Process-Mining-Based ED Layout Optimization</h3>
-      <span class="project-tag">Process Mining</span>
-      <span class="project-tag">Facility Layout</span>
-      <p>Ph.D. research at Yonsei University's System Optimization Laboratory, with Severance Hospital.
-      Built an ED event log from raw clinical data, applied process mining to discover process models and
-      bottlenecks, and developed simulation/optimization models for facility-layout design.</p>
-      <div class="impact">Published in HERD Journal (2017, cited 77) and Value in Health (2023, cited 19)</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Applied Analytics Capstone Program</h3>
-      <span class="project-tag">Teaching</span>
-      <span class="project-tag">Power BI</span>
-      <p>Designed and coordinate the University of Winnipeg's graduate Capstone and Project Management courses,
-      supervising student teams that deliver Power BI dashboards and decision briefs for public-sector clients,
-      including the City of Winnipeg, using Statistics Canada, CMHC, and municipal open data.</p>
-      <div class="impact">100% student/course satisfaction across courses taught to date</div>
-    </div>
-
-  </div>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">&copy; 2026 Farhood Rismanchian.</div>
-</footer>
-
+</div>
+<footer class="foot">&copy; 2026 Farhood Rismanchian</footer>
 </body>
 </html>
